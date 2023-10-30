@@ -7,11 +7,10 @@ import { useState } from 'react'
 import ConfirmPopup from './ConfirmPopup'
 
 const DepartmentContent = () => {
-
-  const [ open, setOpen ] = useState<boolean>(false)
-  const [ openConfirm, setOpenConfirm ] = useState<boolean>(false)
-  const [ department, setDepartment ] = useState<string>('')
-  const [ peerDepartment, setPeerDepartment ] = useState<string>('')
+  const [open, setOpen] = useState<boolean>(false)
+  const [openConfirm, setOpenConfirm] = useState<boolean>(false)
+  const [department, setDepartment] = useState<string>('')
+  const [peerDepartment, setPeerDepartment] = useState<string>('')
 
   const handleClick = () => {
     setOpen(true)

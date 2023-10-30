@@ -20,7 +20,6 @@ type Props = {
 }
 
 const CreatePopup = (props: Props) => {
-
   const handleClose = () => {
     props.setOpen(false)
     setTimeout(() => {
@@ -34,7 +33,7 @@ const CreatePopup = (props: Props) => {
     props.setOpenConfirm(true)
   }
 
-  const isValid: boolean = (props.department.length !== 0) && (props.peerDepartment.length !== 0)
+  const isValid: boolean = props.department.length !== 0 && props.peerDepartment.length !== 0
 
   return (
     <Dialog open={props.open}>
@@ -44,10 +43,18 @@ const CreatePopup = (props: Props) => {
           Subtitle
         </DialogContentText> */}
         <Grid container spacing={4}>
-          <Grid item xs={4} style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}>
+          <Grid
+            item
+            xs={4}
+            style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}
+          >
             Department:
           </Grid>
-          <Grid item xs={8} style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}>
+          <Grid
+            item
+            xs={8}
+            style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}
+          >
             <TextField
               autoFocus
               margin="dense"
@@ -60,10 +67,18 @@ const CreatePopup = (props: Props) => {
               }}
             />
           </Grid>
-          <Grid item xs={4} style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}>
+          <Grid
+            item
+            xs={4}
+            style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}
+          >
             Peer Department:
           </Grid>
-          <Grid item xs={8} style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}>
+          <Grid
+            item
+            xs={8}
+            style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}
+          >
             <TextField
               autoFocus
               margin="dense"
@@ -80,10 +95,7 @@ const CreatePopup = (props: Props) => {
       </DialogContent>
       <DialogActions>
         <Button onClick={handleClose}>Cancel</Button>
-        <Button
-          onClick={handleCrete}
-          disabled={!isValid}
-        >
+        <Button onClick={handleCrete} disabled={!isValid}>
           Create
         </Button>
       </DialogActions>

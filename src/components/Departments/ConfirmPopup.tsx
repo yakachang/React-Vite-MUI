@@ -19,7 +19,6 @@ type Props = {
 }
 
 const ConfirmPopup = (props: Props) => {
-
   const handleGoBack = () => {
     props.setOpenConfirm(false)
     props.setOpen(true)
@@ -41,16 +40,32 @@ const ConfirmPopup = (props: Props) => {
           Subtitle
         </DialogContentText> */}
         <Grid container spacing={4}>
-          <Grid item xs={4} style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}>
+          <Grid
+            item
+            xs={4}
+            style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}
+          >
             Department:
           </Grid>
-          <Grid item xs={8} style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}>
+          <Grid
+            item
+            xs={8}
+            style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}
+          >
             {props.department}
           </Grid>
-          <Grid item xs={4} style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}>
+          <Grid
+            item
+            xs={4}
+            style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}
+          >
             Peer Department:
           </Grid>
-          <Grid item xs={8} style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}>
+          <Grid
+            item
+            xs={8}
+            style={{ display: 'flex', alignItems: 'center', justifyItems: 'start' }}
+          >
             {props.peerDepartment}
           </Grid>
         </Grid>
