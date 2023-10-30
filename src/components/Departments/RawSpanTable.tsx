@@ -5,7 +5,7 @@ import TableCell from '@mui/material/TableCell'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
-import { tableData } from '../constants/rawSpanTableData'
+import { tableData } from '../../constants/rawSpanTableData'
 
 export default function SpanningTable() {
   return (
@@ -14,9 +14,9 @@ export default function SpanningTable() {
         <TableHead>
           <TableRow>
             <TableCell>Department ID</TableCell>
-						<TableCell>Department Name</TableCell>
+            <TableCell>Department Name</TableCell>
             <TableCell>Peer Department IDs</TableCell>
-						<TableCell>Peer Department Names</TableCell>
+            <TableCell>Peer Department Names</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -24,12 +24,12 @@ export default function SpanningTable() {
             <Fragment>
               <TableRow>
                 <TableCell rowSpan={item.peer_dept_names.length + 1}>{item.dept_id}</TableCell>
-								<TableCell rowSpan={item.peer_dept_names.length + 1}>{item.dept_name}</TableCell>
+                <TableCell rowSpan={item.peer_dept_names.length + 1}>{item.dept_name}</TableCell>
               </TableRow>
-							{item.peer_depts.map(peer_dept => (
+              {item.peer_depts.map(peer_dept => (
                 <TableRow>
                   <TableCell>{peer_dept.id}</TableCell>
-									<TableCell>{peer_dept.name}</TableCell>
+                  <TableCell>{peer_dept.name}</TableCell>
                 </TableRow>
               ))}
             </Fragment>

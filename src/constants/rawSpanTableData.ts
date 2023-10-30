@@ -1,22 +1,23 @@
 export const tableData = [
   {
-    dept_id: '00A1801',
-		dept_name: 'F18-CMP1',
-		peer_dept_ids: ['00B2101', '00B2102'],
-    peer_dept_names: ['F21-CMP1', 'F21-CMP2'],
-		peer_depts: [
-			{ id: '00B2101', name: 'F21-CMP1' },
-			{ id: '00B2101', name: 'F21-CMP1' },
-		]
+    dept_id: '00AABC1',
+    dept_name: 'FabA-ABC1',
+    peer_dept_ids: ['00BABC1', '00BABC2'],
+    peer_dept_names: ['FabB-ABC1', 'FabB-ABC2'],
+    peer_depts: [
+      { id: '00BABC1', name: 'FabB-ABC1' },
+      { id: '00BABC2', name: 'FabB-ABC2' },
+    ],
   },
   {
-    dept_id: '00A1811',
-		dept_name: 'F18-CVD1',
-		peer_dept_ids: ['00B2111', '00B2112'],
-    peer_dept_names: ['F21-CVD1', 'F21-CVD2', 'F21-CVD3'],
-		peer_depts: [
-			{ id: '00B2101', name: 'F21-CMP1' },
-			{ id: '00B2101', name: 'F21-CMP1' },
-		]
+    dept_id: '00ADEF1',
+    dept_name: 'FabA-DEF1',
+    peer_dept_ids: ['00BDEF1', '00BDEF2', '00BDEF3'],
+    peer_dept_names: ['FabB-DEF1', 'FabB-DEF2', 'FabB-DEF3'],
+    peer_depts: [
+      { id: '00BDEF1', name: 'FabB-DEF1' },
+      { id: '00BDEF2', name: 'FabB-DEF2' },
+      { id: '00BDEF3', name: 'FabB-DEF3' },
+    ],
   },
 ]
