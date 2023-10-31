@@ -21,13 +21,13 @@ export default function SpanningTable() {
         </TableHead>
         <TableBody>
           {tableData.map(item => (
-            <Fragment>
+            <Fragment key={item.id}>
               <TableRow>
                 <TableCell rowSpan={item.peer_dept_names.length + 1}>{item.dept_id}</TableCell>
                 <TableCell rowSpan={item.peer_dept_names.length + 1}>{item.dept_name}</TableCell>
               </TableRow>
               {item.peer_depts.map(peer_dept => (
-                <TableRow>
+                <TableRow key={peer_dept.id}>
                   <TableCell>{peer_dept.id}</TableCell>
                   <TableCell>{peer_dept.name}</TableCell>
                 </TableRow>

@@ -1,5 +1,6 @@
 export const tableData = [
   {
+    id: '512d3fdd-6b10-4175-8d0a-0b86028477c8',
     dept_id: '00AABC1',
     dept_name: 'FabA-ABC1',
     peer_dept_ids: ['00BABC1', '00BABC2'],
@@ -10,6 +11,7 @@ export const tableData = [
     ],
   },
   {
+    id: '242e8024-cda4-40df-a336-86b04d64ec07',
     dept_id: '00ADEF1',
     dept_name: 'FabA-DEF1',
     peer_dept_ids: ['00BDEF1', '00BDEF2', '00BDEF3'],
